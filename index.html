@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>答案之书</title>
+    
+    <!-- 添加基础 favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- iOS 设备添加到主屏幕的图标 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    
+    <!-- PWA manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- 其他现有标签 -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 背景装饰 -->
+        <div class="background">
+            <div class="stars"></div>
+            <div class="particles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="light-orbs">
+                <div class="orb"></div>
+                <div class="orb"></div>
+                <div class="orb"></div>
+            </div>
+        </div>
+
+        <!-- 主要内容 -->
+        <main>
+            <!-- 标题部分 -->
+            <header>
+                <div class="title">
+                    <div class="title-decoration top">
+                        <i class="ri-star-fill"></i>
+                        <span class="line"></span>
+                    </div>
+                    <h1>答案之书</h1>
+                    <div class="title-decoration bottom">
+                        <span class="line"></span>
+                        <i class="ri-star-fill"></i>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 书本部分 -->
+            <div class="book-container">
+                <div class="book" id="book">
+                    <div class="book-cover">
+                        <i class="ri-moon-clear-fill"></i>
+                        <div class="spine-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 答案结果部分 -->
+            <div class="result-container hidden" id="result">
+                <div class="result-card">
+                    <i class="ri-sparkle-fill"></i>
+                    <p class="answer-text" id="answer-text"></p>
+                    <button class="retry-button" id="retry-button">
+                        <div class="magic-wand">
+                            <i class="ri-magic-line"></i>
+                            <div class="sparkles">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/answers.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
