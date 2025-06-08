@@ -165,7 +165,7 @@ const AnswerProvider = {
         { content: "一切有时，万物有序", type: "philosophy" },
         { content: "随心而行，随性而为", type: "philosophy" },
         
-
+],
     getRandomAnswer() {
         return this.answers[Math.floor(Math.random() * this.answers.length)];
     }
